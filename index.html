@@ -8,31 +8,70 @@
 </head>
 <body>
 
-    <div class="container-fluid text-center">
-        <div class="row">
-            <div class="col bg-primary text-white p-3">
-                <h1>Formulário consumindo API ViaCep</h1>
+    <div class="bg-primary text-white text-center py-4 mb-4">
+        <div class="container">
+            <h1>Formulário consumindo API ViaCep</h1>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 col-md-10">
+                <div class="card">
+                    <div class="card-body">
+                        <h2 class="text-center mb-4">Informe o CEP</h2>
+                        <p class="text-center text-muted mb-4">
+                            Preencha o Formulário.
+                        </p>
+
+                        <!-- Formulario -->
+                        <form method="post">
+                            <!-- CEP -->
+                            <div class="mb-3">
+                                <label for="cep" class="form-label fw-bold">CEP</label>
+                                <input type="text" id="cep" name="cep" class="form-control" placeholder="Digite o CEP">
+                            </div>
+
+                            <!-- Rua -->
+                            <div class="mb-3">
+                                <label for="rua" class="form-label fw-bold">Rua</label>
+                                <input type="text" id="rua" name="rua" class="form-control" placeholder="Digite a rua">
+                            </div>
+
+                            <!-- Bairro -->
+                            <div class="mb-3">
+                                <label for="bairro" class="form-label fw-bold">Bairro</label>
+                                <input type="text" id="bairro" name="bairro" class="form-control" placeholder="Digite o bairro">
+                            </div>
+
+                            <!-- Cidade -->
+                            <div class="mb-3">
+                                <label for="cidade" class="form-label fw-bold">Cidade</label>
+                                <input type="text" id="cidade" name="cidade" class="form-control" placeholder="Digite a cidade">
+                            </div>
+
+                            <!-- Estado -->
+                            <div class="mb-3">
+                                <label for="estado" class="form-label fw-bold">Estado</label>
+                                <input type="text" id="estado" name="estado" class="form-control" placeholder="Digite o estado">
+                            </div>
+
+                            <!-- IBGE -->
+                            <div class="mb-3">
+                                <label for="ibge" class="form-label fw-bold">IBGE</label>
+                                <input type="text" id="ibge" name="ibge" class="form-control" placeholder="Digite o IBGE">
+                            </div>
+
+                            <!-- Botao -->
+                            <div class="d-grid">
+                                <button type="submit" class="btn btn-primary">Enviar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
-
-    
-    <div class="row">
-        <div class="col-3"></div>
-        <div class="col-6 border">
-            <h2>Formulário</h2>
-            <form method="get">
-                <div class="mb-3">
-                    <label for="cep" class="form-label">CEP</label>
-                    <input type="text" name="cep" class="form-control">
-                </div>
-                <input type="submit" value="Enviar" class="btn btn-
-                success">
-            </form>
-        </div>
-        <div class="col-3"></div>
-
     </div>
-</div>
+
 </body>
 </html>
-
